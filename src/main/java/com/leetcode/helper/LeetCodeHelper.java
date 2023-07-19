@@ -125,17 +125,7 @@ public class LeetCodeHelper {
             } else if (componentType.isArray()) {
                 buildArray(clazz, clazz, strParameter, i, parameters);
             } else {
-                //Array type
-                Class<?>[] interfaces = clazz.getInterfaces();
-                for (int j = 0; j < interfaces.length; j++) {
-                    if (interfaces[j].isAssignableFrom(HelperNode.class)) {
-                        parameters[i] = ((HelperNode) clazz.getDeclaredConstructor().newInstance()).convertArray(strParameter);
-                        break;
-                    }
-                    if (j == interfaces.length - 1) {
-                        throw new HelperException("Unsupported parameter type: " + componentType.getName());
-                    }
-                }
+                throw new HelperException("Unsupported parameter type: " + clazz.getName());
             }
         } else {
             throw new HelperException("Unsupported parameter type: " + clazz.getName());
@@ -156,7 +146,7 @@ public class LeetCodeHelper {
                 throw new HelperException("Unsupported parameter array type: " + clazz.getName());
             }
         }
-    }
+     }
 
     private static Class<?> getMainApplicationClass() throws Exception {
         Class<?> clazz = null;

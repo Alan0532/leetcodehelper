@@ -1,8 +1,31 @@
 package com.leetcode.helper;
 
-import com.leetcode.helper.model.listnode.ListNode;
-import com.leetcode.helper.model.treenode.TreeNode;
+import com.leetcode.helper.model.node.TreeNode;
 
+/*
+
+leetcode-editor\src\main\java\com
+
+${question.content}
+
+package com.leetcode.editor.cn;
+
+import com.leetcode.helper.LeetCodeHelper;
+import com.leetcode.helper.model.node.ListNode;
+import com.leetcode.helper.model.node.TreeNode;
+
+import java.util.*;
+
+//${question.title}
+public class $!velocityTool.camelCaseName(${question.titleSlug}) {
+
+    public static void main(String[] args) {
+        LeetCodeHelper.code("输入");
+    }
+
+    ${question.code}
+}
+*/
 public class LeetCodeTest {
     public static void main(String[] args) {
         LeetCodeHelper.code("root = [1,2,3,4,null,5,6,null,null,null,7,8]");

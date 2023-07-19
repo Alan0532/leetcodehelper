@@ -1,8 +1,8 @@
-package com.leetcode.helper.model.treenode;
+package com.leetcode.helper.model.node;
 
+import com.leetcode.helper.model.HelperNode;
 import com.leetcode.helper.model.util.JsonUtils;
 import com.leetcode.helper.model.util.HelperException;
-import com.leetcode.helper.model.HelperNode;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -58,11 +58,6 @@ public class TreeNode implements HelperNode {
         }
 
         return this;
-    }
-
-    @Override
-    public HelperNode[] convertArray(String parameter) {
-        return null;
     }
 
     @Override
