@@ -21,8 +21,8 @@ $!velocityTool.camelCaseName(${question.titleSlug})
 package com.leetcode.editor.cn;
 
 import com.leetcode.helper.LeetCodeHelper;
-import com.leetcode.helper.model.listnode.ListNode;
-import com.leetcode.helper.model.treenode.TreeNode;
+import com.leetcode.helper.model.node.ListNode;
+import com.leetcode.helper.model.node.TreeNode;
 
 import java.util.*;
 
